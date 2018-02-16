@@ -14,6 +14,9 @@ class TestStringMethods(unittest.TestCase):
     def test_divide(self):
         result = rpn.calculate("6 3 /")
         self.assertEqual(2, result)
+    def test_exponent(self):
+        result = rpn.calculate("2 0 ^")
+        self.assertEqual(1, result)
 
 if __name__ == '__main__':
     unittest.main()
