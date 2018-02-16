@@ -2,7 +2,8 @@ language: python
 python:
   - "3.5"
 before_install:
-  - pip install coveralls
+  - pip install python-coveralls
+  - pip install coverage
 script: python test_rpn.py
 after_success:
   - coveralls
