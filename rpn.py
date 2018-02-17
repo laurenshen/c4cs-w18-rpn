@@ -36,7 +36,7 @@ def main():
             color = bg('indian_red_1a') + fg('white')
             reset = attr('reset')
             print(color + "Result: " + result + reset)
-        elif:
+        else:
             print("Result: ", result)
 
 if __name__ == '__main__':
