@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import operator
+from colored import fg, bg, attr
 
 
 operators = {
@@ -31,7 +32,12 @@ def calculate(myarg):
 def main():
     while True:
         result = calculate(input("rpn calc> "))
-        print("Result: ", result)
+        if result < 0:
+            color = bg('indian_red_1a') + fg('white')
+            reset = attr('reset')
+            print(color + "Result: " + result + reset)
+        elif:
+            print("Result: ", result)
 
 if __name__ == '__main__':
     main()
