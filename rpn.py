@@ -33,9 +33,7 @@ def main():
     while True:
         result = calculate(input("rpn calc> "))
         if result < 0:
-            color = bg('indian_red_1a') + fg('white')
-            reset = attr('reset')
-            print(color + "Result: " + result + reset)
+            print('%s Result: %d %s' % (fg(1), result, attr(0)))
         else:
             print("Result: ", result)
 
