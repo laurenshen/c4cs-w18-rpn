@@ -32,10 +32,7 @@ def calculate(myarg):
 def main():
     while True:
         result = calculate(input("rpn calc> "))
-        if result < 0:
-            print('%s Result: %d %s' % (fg(1), result, attr(0)))
-        else:
-            print("Result: ", result)
+        print("Result: ", result)
 
 if __name__ == '__main__':
     main()
